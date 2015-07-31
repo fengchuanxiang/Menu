@@ -14,6 +14,8 @@
 		197DF9B61B6B14AD000E812C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197DF9B51B6B14AD000E812C /* Images.xcassets */; };
 		197DF9B91B6B14AD000E812C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197DF9B71B6B14AD000E812C /* LaunchScreen.xib */; };
 		197DF9C51B6B14AD000E812C /* MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DF9C41B6B14AD000E812C /* MenuTests.m */; };
+		19A36DD41B6B452D008B7464 /* MenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A36DD31B6B452D008B7464 /* MenuScrollView.m */; };
+		19A36DD71B6B6225008B7464 /* MenuPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A36DD61B6B6225008B7464 /* MenuPopover.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		197DF9BE1B6B14AD000E812C /* MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		197DF9C31B6B14AD000E812C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		197DF9C41B6B14AD000E812C /* MenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTests.m; sourceTree = "<group>"; };
+		19A36DD21B6B452D008B7464 /* MenuScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuScrollView.h; sourceTree = "<group>"; };
+		19A36DD31B6B452D008B7464 /* MenuScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScrollView.m; sourceTree = "<group>"; };
+		19A36DD51B6B6225008B7464 /* MenuPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuPopover.h; sourceTree = "<group>"; };
+		19A36DD61B6B6225008B7464 /* MenuPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuPopover.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				197DF9AD1B6B14AD000E812C /* AppDelegate.m */,
 				197DF9AF1B6B14AD000E812C /* ViewController.h */,
 				197DF9B01B6B14AD000E812C /* ViewController.m */,
+				19A36DD51B6B6225008B7464 /* MenuPopover.h */,
+				19A36DD61B6B6225008B7464 /* MenuPopover.m */,
+				19A36DD21B6B452D008B7464 /* MenuScrollView.h */,
+				19A36DD31B6B452D008B7464 /* MenuScrollView.m */,
 				197DF9B21B6B14AD000E812C /* Main.storyboard */,
 				197DF9B51B6B14AD000E812C /* Images.xcassets */,
 				197DF9B71B6B14AD000E812C /* LaunchScreen.xib */,
@@ -219,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A36DD71B6B6225008B7464 /* MenuPopover.m in Sources */,
 				197DF9B11B6B14AD000E812C /* ViewController.m in Sources */,
+				19A36DD41B6B452D008B7464 /* MenuScrollView.m in Sources */,
 				197DF9AE1B6B14AD000E812C /* AppDelegate.m in Sources */,
 				197DF9AB1B6B14AD000E812C /* main.m in Sources */,
 			);
@@ -299,7 +311,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -348,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Menu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -358,6 +371,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Menu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -416,6 +430,7 @@
 				197DF9CA1B6B14AD000E812C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		197DF9CB1B6B14AD000E812C /* Build configuration list for PBXNativeTarget "MenuTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +439,7 @@
 				197DF9CD1B6B14AD000E812C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
