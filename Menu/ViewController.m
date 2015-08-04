@@ -53,7 +53,6 @@
     menu.bottomLineHeight = 2;
     menu.bottomLineColor = [UIColor redColor];
     menu.titleArray = @[@"111111", @"2222", @"3333"];
-    menu.titleColor = [UIColor blackColor];
     [self.view addSubview:menu];
     
 }

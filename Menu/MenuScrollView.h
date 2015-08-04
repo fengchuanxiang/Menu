@@ -26,7 +26,9 @@ typedef void (^ MenuDidClickPageBlock)(NSInteger page);
 @property (nonatomic, unsafe_unretained) CGFloat bottomLineIndentation;//!< default is 0
 @property (nonatomic, strong) UIColor *bottomLineColor;
 @property (nonatomic, unsafe_unretained) CGFloat bottomLineHeight;//!< default is 1
-@property (nonatomic, strong) UIColor *titleColor;
+@property (nonatomic, strong) UIColor *titleColorNormal;
+@property (nonatomic, strong) UIColor *titleColorSelected;
+
 @property (nonatomic, strong) NSArray *titleArray;
 
 
@@ -34,5 +36,7 @@ typedef void (^ MenuDidClickPageBlock)(NSInteger page);
 - (instancetype)initWithFrame:(CGRect)frame dataScrollView:(UIScrollView *)scrollView;
 
 - (instancetype)initWithDataScrollView:(UIScrollView *)scrollView;
+
+- (void)setTitleColorNormal:(UIColor *)titleColorNormal titleColorSelected:(UIColor *)titleColorSelected;
 
 @end
