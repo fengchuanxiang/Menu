@@ -16,6 +16,8 @@
 		197DF9C51B6B14AD000E812C /* MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 197DF9C41B6B14AD000E812C /* MenuTests.m */; };
 		19A36DD41B6B452D008B7464 /* MenuScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A36DD31B6B452D008B7464 /* MenuScrollView.m */; };
 		19A36DD71B6B6225008B7464 /* MenuPopover.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A36DD61B6B6225008B7464 /* MenuPopover.m */; };
+		8AA89D901B99277600E754B5 /* FCXPathMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA89D8F1B99277600E754B5 /* FCXPathMenu.m */; };
+		8AA89D931B99278E00E754B5 /* FCXPathButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA89D921B99278E00E754B5 /* FCXPathButtonItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		19A36DD31B6B452D008B7464 /* MenuScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuScrollView.m; sourceTree = "<group>"; };
 		19A36DD51B6B6225008B7464 /* MenuPopover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuPopover.h; sourceTree = "<group>"; };
 		19A36DD61B6B6225008B7464 /* MenuPopover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuPopover.m; sourceTree = "<group>"; };
+		8AA89D8E1B99277600E754B5 /* FCXPathMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCXPathMenu.h; sourceTree = "<group>"; };
+		8AA89D8F1B99277600E754B5 /* FCXPathMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCXPathMenu.m; sourceTree = "<group>"; };
+		8AA89D911B99278E00E754B5 /* FCXPathButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCXPathButtonItem.h; sourceTree = "<group>"; };
+		8AA89D921B99278E00E754B5 /* FCXPathButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FCXPathButtonItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,10 @@
 				19A36DD61B6B6225008B7464 /* MenuPopover.m */,
 				19A36DD21B6B452D008B7464 /* MenuScrollView.h */,
 				19A36DD31B6B452D008B7464 /* MenuScrollView.m */,
+				8AA89D8E1B99277600E754B5 /* FCXPathMenu.h */,
+				8AA89D8F1B99277600E754B5 /* FCXPathMenu.m */,
+				8AA89D911B99278E00E754B5 /* FCXPathButtonItem.h */,
+				8AA89D921B99278E00E754B5 /* FCXPathButtonItem.m */,
 				197DF9B21B6B14AD000E812C /* Main.storyboard */,
 				197DF9B51B6B14AD000E812C /* Images.xcassets */,
 				197DF9B71B6B14AD000E812C /* LaunchScreen.xib */,
@@ -173,6 +183,7 @@
 		197DF99D1B6B14AD000E812C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FCX;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = fcx;
 				TargetAttributes = {
@@ -229,7 +240,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AA89D931B99278E00E754B5 /* FCXPathButtonItem.m in Sources */,
 				19A36DD71B6B6225008B7464 /* MenuPopover.m in Sources */,
+				8AA89D901B99277600E754B5 /* FCXPathMenu.m in Sources */,
 				197DF9B11B6B14AD000E812C /* ViewController.m in Sources */,
 				19A36DD41B6B452D008B7464 /* MenuScrollView.m in Sources */,
 				197DF9AE1B6B14AD000E812C /* AppDelegate.m in Sources */,
