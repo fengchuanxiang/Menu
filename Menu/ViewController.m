@@ -77,6 +77,9 @@
     
     scrollView.userInteractionEnabled = YES;
     pathMenu = [[FCXPathMenu alloc] initWithFrame:CGRectMake((self.view.frame.size.width - 72)/2.0, (self.view.frame.size.height - 72)/2.0, 72, 72) superView:self.view menusArray:@[pathItem1, pathItem2, pathItem3]];
+    pathMenu.menuClickBlock = ^(NSInteger buttonIndex){
+        NSLog(@"index %d", buttonIndex);
+    };
 }
 
 - (void)buttonAction {
